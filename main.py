@@ -6,6 +6,8 @@ import numpy as np
 # Import functions from functions.py
 from functions import prev, binary_encode, select_cols, split_target, standardize, train_tune_test_split, one_hot_encode
 
+# COLLEGE COMPLETION DATASET
+
 # Step Two:
 # Write a generic question that this dataset could address
 # Can we predict whether an institution is private given its institutional characteristics?
@@ -14,7 +16,6 @@ from functions import prev, binary_encode, select_cols, split_target, standardiz
 # We can see if our predictions are correct which will save time when classifying institutions for academic research purposes
 
 # %% 
-# INSTITUTION DATASET
 # Data Preprocessing
 # Read data in
 df = pd.read_csv('cc_institution_details.csv')
@@ -62,7 +63,16 @@ X_train1, X_tune1, X_test1, y_train1, y_tune1, y_test1 = train_tune_test_split(X
 # accounting for more money spent even with less students
 
 # %%
-# COLLEGE COMPLETION
+# JOB PLACEMENT DATASET
+
+# Step Two:
+# Write a generic question that this dataset could address
+# Can we figure out if a student has been placed based off their educational achievements?
+
+# What is an independent Business Metric for your problem? Think about the case study examples we have discussed in class.
+# We can find enforce education achievements with high correlation to placement in hopes of placing more students from a given program. The independent business metric
+# would be an increase in placement percentage from a educational population
+
 # Data Preprocessing
 # Read data in
 url = 'https://raw.githubusercontent.com/DG1606/CMS-R-2020/master/Placement_Data_Full_Class.csv'
