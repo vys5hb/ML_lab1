@@ -55,6 +55,7 @@ print(f'The prevalence of private institutions is: {prev(y1)}')
 X_train1, X_tune1, X_test1, y_train1, y_tune1, y_test1 = train_tune_test_split(X1, y1)
 
 # Step Three:
+
 # What do your instincts tell you about the data. Can it address your problem, what areas/items are you worried about?
 # Yes, I believe that this dataset holds good information to predict if an institution is private or not. This mainly comes from looking at student_count.
 # Public institutions generally have larger school populations than private institutions which would be a pretty big indicator. Another feature is if a school is the flagship school of 
@@ -115,4 +116,10 @@ print(f'The prevalence of private institutions is: {prev(y2)}')
 
 # Train Tune Test Split
 X_train2, X_tune2, X_test2, y_train2, y_tune2, y_test2 = train_tune_test_split(X2, y2)
+
+# Step Three:
+# I think the data within this dataset can accurately predict if a student has been placed. I believe that there will be trends among degree concentrations, MBA percentages, 
+# and previous work experience. I have some worries about the volatility among job placements though since there are many external factors like a candidates interviewing skills, or 
+# networking connections which can greatly impact their job placements. I'm confident that my question can be reasonably answered and will fairly predict if a candidate has been placed or not.
 # %%
+
