@@ -45,7 +45,7 @@ df[cont_vars1] = standardize(df, cont_vars1)
 print(df.dtypes)
 
 # Select target variable and drop target from training data
-feature_list1 = ['level', 'control', 'flagship', 'hbcu', 'student_count', 'awards_per_state_value', 'exp_award_state_value', 'fte_value', 'fte_percentile']
+feature_list1 = ['level', 'flagship', 'hbcu', 'student_count', 'awards_per_state_value', 'exp_award_state_value', 'fte_value', 'fte_percentile']
 X1, y1 = split_target(df, target='control', features=feature_list1)
 
 # Calculate prevalence
